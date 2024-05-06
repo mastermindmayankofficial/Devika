@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = "Media_search"
 API_ID = int(6129258)
 API_HASH = "9e4430929d7757512f864d160dac0a98"
-BOT_TOKEN = "5030500439:AAETW6k0E0oCf0NZ0PIZUOb8bFUT1n6umr4"
+BOT_TOKEN = "6901918960:AAGMGL_xk4LYyIuipvIw4neTAGlyevnDxKk"
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -34,10 +34,10 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 # MongoDB information
 DATABASE_URI = "mongodb+srv://Hemanth:Hemanth@cluster0.uzzh3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 DATABASE_NAME = "cluster0"
-COLLECTION_NAME = "Telegram_files"
+COLLECTION_NAME = "test_devika1"
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001792180012'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002060785557'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Filmcornerofficialgroup')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
