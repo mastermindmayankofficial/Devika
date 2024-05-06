@@ -41,8 +41,8 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'NOTQF')
 
 # MongoDB information
-DATABASE_URI = "mongodb+srv://Hemanth:Hemanth@cluster0.uzzh3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-DATABASE_NAME = "cluster0"
+DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "MASTERMIND")
 COLLECTION_NAME = "test_devika1"
 
 
