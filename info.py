@@ -18,7 +18,7 @@ BOT_TOKEN = "6901918960:AAGMGL_xk4LYyIuipvIw4neTAGlyevnDxKk"
 
 #CHANNELS
 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001570289337 -1001369815641').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002106008239').split()]
 auth_channel = environ.get('AUTH_CHANNEL')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002060785557'))
