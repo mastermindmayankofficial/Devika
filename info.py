@@ -14,16 +14,16 @@ def is_enabled(value, default):
 SESSION = "Media_search"
 API_ID = int(6129258)
 API_HASH = "9e4430929d7757512f864d160dac0a98"
-BOT_TOKEN = "6901918960:AAGMGL_xk4LYyIuipvIw4neTAGlyevnDxKk"
+BOT_TOKEN = "6931689998:AAFhpk5t7-XfjxykRCcnWCecnQPktPUcJa8"
 
 #CHANNELS
 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002106008239').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002085459317').split()]
 auth_channel = environ.get('AUTH_CHANNEL')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002060785557'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002036435545'))
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', -1002113223513split()]
 
 # Admins & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5674020159').split()]
